@@ -1,0 +1,843 @@
+.box_alert 
+  width: 100%
+  box-shadow: 0px 4px 5px $color_06 !important
+  border-radius: 0 !important
+  & .title_alert 
+    background: $color_07
+    padding: 1px 24px 1px 10px
+    position: relative
+    border-bottom: none
+    & h5 
+      font-size: 16px
+      color: $color_01
+      font-weight: bold
+    & i 
+      position: absolute
+      right: 0px
+      top: 6px
+      margin: 0
+      font-weight: bold
+      font-size: 28px
+      color: $color_01
+    & .status
+        width: auto
+        height: auto
+        padding: 2px 8px
+        color: $color_01
+        float: right
+        font-size: 16px
+        margin: 6px
+    & .trafficlight 
+        float: right
+        margin-right: 10px
+        ul 
+            margin-left: -32px  
+        li 
+            margin-top: 5px
+        .active
+            margin-top: -1px
+  & .content_alert 
+    background: rgba(99,110,119,0.36) 
+    padding: 10px 24px 10px 24px
+    min-height: 50px
+    overflow: auto
+
+    & p 
+      font-family: $font1
+      margin: 5px 0px
+      font-size: 14px
+      color: $color_06
+        
+
+    & .name_alert 
+      margin: 5px 0px
+      min-height: 75px
+
+      & p 
+        font-family: $font2
+        font-size: 14px
+        margin: 5px 0px
+        color: $color_02
+        word-wrap: break-word
+
+        & span 
+          font-weight: bold
+.header-blue
+    width: 100%
+    height: 60px
+    background-color: $color_04
+    position: relative
+    left: 0
+    color: $color_01
+    padding: 19px 15px 0 15px
+    box-shadow: 4px 2px 10px $color_07
+    i
+        font-size: 24px
+    .back
+        float: left
+        margin-right: 5px
+    h3
+        margin-top: -3px
+        float: left
+.icon-add-task
+    +border-radius(50%)
+    background-color: $color_05
+    color: $color_01
+    padding: 4px
+    font-size: 30px !important
+    text-decoration: none
+    position: absolute
+    right: 50px
+    top: 40px
+    z-index: 1
+    box-shadow: 0px 2px 7px $color_06
+.container-taks      
+    padding-top: 30px
+.margin_0
+    margin: 0 !important
+.box-tasks
+    margin: auto
+    height: auto
+    position: relative
+    background-color: $color_01
+    box-shadow: 0 0 6px rgba(0,0,0,0.2)   
+    .box-tasks-title
+        border-bottom: 2px solid $color_06  
+        padding: 4px 10px
+        color: $color_07
+        h4
+            float: left
+            font-family: $font2 !important
+        i 
+            float: right
+            font-size: 22px
+        .dropdown
+            right: -6px
+    .box-tasks-body
+        padding: 10px 5px
+        .box-tasks-scroll
+            max-height: 300px
+            overflow: auto
+            padding: 0 5px 1px 5px
+            margin-bottom: 10px
+.dropdown
+  position: absolute !important
+  right: 5px
+  top: 5px
+  height: 29px
+  width: 30px
+  z-index: 0
+  cursor: pointer
+  & .dropdown-i
+    position: absolute
+    top: 0px
+    right: 0px
+    margin: 0
+    font-size: 20px
+    padding: 7px
+    cursor: pointer !important
+
+  &:hover
+    height: 100%
+    -webkit-transition: height 0.3s linear
+    -moz-transition: height 0.3s linear
+    -ms-transition: height 0.3s linear
+    -o-transition: height 0.3s linear
+    transition: height 0.7s linear
+ 
+    & .dropdown-box-menu
+      display: block
+
+  .dropdown-box-menu
+    position: absolute
+    top: 30px
+    right: 23px
+    display: none
+
+    .dropdown-men
+      width: 100px
+      position: absolute
+      right: 1px
+      box-shadow: 0 0 3px $color_07
+      -webkit-box-shadow: 0 0 3px $color_07
+      -moz-box-shadow: 0 0 3px $color_07
+      -o-box-shadow: 0 0 3px $color_07
+      -ms-box-shadow: 0 0 3px $color_07
+      & ul
+        margin: 0
+        padding: 0
+        cursor: pointer
+        & li
+          font-family: $font2
+          list-style-type: none
+          text-align: left
+          box-sizing: border-box
+          font-size: 14px
+          width: 100%
+          max-width: 160px
+          overflow: hidden
+          white-space: nowrap
+          text-overflow: ellipsis
+          padding: 5px
+          background-color: $color_01
+          color: $color_07
+          i
+            float: left
+            font-size: 18px
+            margin-right: 5px
+
+          &:hover
+            background-color: $color_06
+            color: $color_01
+
+.box-card
+    width: 100%
+    height: auto
+    box-shadow: 0 0 2px rgba(0,0,0,0.5)
+    margin-bottom: 10px
+    .box-card-title
+        width: 100%
+        padding: 8px
+        color: $color_01
+        h4
+            font-size: 16px
+            margin: 0
+            font-family: $font2 !important
+    .box-card-image
+        +background-size(cover)
+        background-position: center center
+        width: 100%
+        height: 200px
+       
+    .box-card-body
+        background-color:  #f7f7f7
+        width: 100%
+        padding: 10px
+        color: $color_17
+        h4
+            font-weight: bold
+        p 
+            -webkit-line-clamp: 2
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+.box-card:last-child
+    margin-bottom: 0 !important
+.box-progress
+    width: 100%
+    margin-bottom: 0
+    position: relative
+    font-size: 14px
+    .progress-title
+        float: left
+
+    .progress-bar
+         position: relative
+         height: 10px
+         background-color: rgba(207,207,207, 0.5)
+         margin: 5px 1%
+         div
+            position: absolute
+            left: 0
+            background-color: $color_09
+            width: 50%
+            height: 100%
+    .percent
+        float: right
+        text-align: right
+.mt
+    margin-top: 0 !important
+.box-users
+    width: 100%
+    .user
+        width: 35px
+        height: 35px
+        +border-radius(50%)
+        +background-size(cover)
+        display: inline-block
+        background-color: $color_06
+.box-card-footer
+    width: 100%
+    ul 
+        margin: 0
+        padding: 0
+        li 
+            list-style-type: none
+            margin: 0 -2px 0 0
+            display: inline-block
+            vertical-align: middle
+            .file, .icon-date, p
+                font-size: 18px
+                color: $color_17
+                float: left
+                margin-top: 6px
+            .number
+                +border-radius(50%)
+                padding: 2px 9px
+                color: $color_01
+                text-align: center
+                margin-right: 2px
+            div 
+                float: right
+                margin-top: 4px
+                color: $color_01
+                font-size: 14px
+                padding: 2px 5px
+                width: auto
+                margin-left: 2px
+            .status-title
+                font-size: 15px !important
+                margin-right: 3px
+                margin-top: 12px
+
+            .status
+                margin-top: 12px         
+.text-add-task
+    float: right      
+    color: #00b6ae
+    font-size: 16px
+    margin-right: 5px
+.switch
+    width: 100%
+    .part1
+        width: 80%
+        height: 12px
+        border-radius: 10px
+        position: relative
+        .part2
+            width: 20px
+            height: 20px
+            +border-radius(50%)
+            position: absolute
+            top: -5px
+            right: 0
+            box-shadow: 0px 0px 2px $color_07
+            cursor: pointer
+
+.menu-filter:hover
+    height: 100%
+    -webkit-transition: height 0.7s linear
+    -moz-transition: height 0.7s linear
+    -ms-transition: height 0.7s linear
+    -o-transition: height 0.7s linear
+    transition: height 0.7s linear
+ 
+    & .box-filters
+      display: block
+
+.box-filters
+    width: 200px
+    height: auto
+    position: absolute
+    z-index: 3
+    right: 31px
+    top: 43px
+    box-shadow: 0px 0px 2px $color_07
+    display: none
+
+    .filters-title
+        width: 100%
+        height: 30px
+        background-color: $color_07
+        color: $color_01
+        font-size: 16px
+        padding: 5px 5px 5px 8px
+    .filters-body
+        width: 100%
+        height: auto
+        background-color: $color_01
+        color: $color_07        
+        .filters-body-title
+            width: 100%
+            padding: 5px 5px 5px 11px
+            p 
+                margin: 0
+                font-size: 15px
+        .filters-body-privacy
+            width: 100%
+            padding: 5px 20px
+            p 
+                float: left
+            .switch
+                float: right
+                width: 40px
+                margin-top: 6px
+            .check
+                width: 100%
+                margin: 10px 0
+                p
+                    float: none
+        .text-filter
+            p 
+               float: none
+
+        .border-b
+            border-bottom: 1px solid $color_06
+.trafficlight
+    position: relative
+    width: 72px !important
+    height: 30px
+    +border-radius(3px)
+    left: 5px
+    top: 3px
+    span 
+        position: absolute
+        width: 14px
+        height: 14px
+        +border-radius(50%)
+        top: 50%
+        margin-top: -7px
+        z-index: 0
+    .left
+        left: -4px
+    .right
+        right: -4px
+    ul 
+        padding: 0
+        position: absolute
+        width: 74px
+        left: 50%
+        margin-left: -41px
+        top: 50%
+        margin-top: -10px
+        li 
+            float: left
+            width: 33.33%
+            text-align: center
+            list-style-type: none
+            div
+                width: 12px
+                height: 12px
+                +border-radius(50%)
+              
+
+            .active
+                width: 15px 
+                height: 15px 
+                margin-top: 3px 
+            .active-green
+                background-color: $color_05
+            .active-red
+                background-color: $color_03
+            .active-yellow
+                background-color: $color_13
+.trafficlight-grey
+    background-color: $color_07
+    span
+         background-color: $color_07
+    div
+        background-color: $color_01
+.trafficlight-white
+    background-color: $color_01
+    span
+        background-color: $color_01
+    div
+        background-color: $color_07
+.list-project
+    margin: 0 auto
+    padding: 0
+    .box 
+        list-style: none
+        display: inline-block
+.box-project
+    .box-project-image
+        width: 100%
+        height: 180px
+        padding: 10px
+        background-color: $color_01
+        position: relative
+        i 
+            font-size: 20px
+        .dropdown
+            right: -5px
+        .project-image
+            width: 120px
+            height: 120px
+            margin: auto
+            +border-radius(50%)
+            +background-size(cover)
+            background-color: $color_05
+    .box-project-title
+        width: 100%
+        height: 40px
+        padding: 5px 10px
+        color: $color_01
+        p 
+            margin-top: 5px
+            font-weight: bold
+            font-size: 15px
+      
+.size-circle
+    width: 50px !important
+    height: 50px !important
+.box-left 
+    width: 90% !important
+.add
+    width: 10%
+    float: right
+    cursor: pointer
+    position: relative
+    i 
+        font-size: 16px
+    .icon-add-task
+        position: relative !important
+        right: 0
+        top: 3px
+.attachments
+    width: 100%
+    ul 
+        margin: 0
+        padding: 0
+        li 
+            display: inline-block
+            list-style-type: none
+            i 
+                float: left
+                font-size: 16px
+                margin: 6px
+
+            p 
+                float: right
+                font-weight: bold
+                font-family: $font2
+                color: $color_17 !important
+.fs
+    font-size: 15px !important
+.activity
+    width: 100%
+    ul 
+        margin: 0
+        padding: 0
+        li 
+            display: block
+            list-style-type: none
+            margin-bottom: 10px
+            width: 100%
+            position: relative
+            .date
+                position: absolute
+                right: 0
+                top: -26px
+                text-align: right
+
+            p 
+                float: left
+                margin-top: 23px !important
+                font-family: $font2 !important
+                font-size: 15px !important
+                color: $color_17 !important
+                span
+                    font-weight: bold
+
+.profile
+    width: 45px
+    height: 45px
+    +border-radius(50%)
+    +background-size(cover)
+    margin: 5px
+    float: left
+.size-profile
+    width: 55px !important
+    height: 55px !important
+
+.comments
+    width: 100%
+    ul 
+        margin: 0
+        padding: 0
+        li 
+            width: 100%
+            display: block
+            background-color: $color_06
+        
+            padding: 10px 10px 2px 10px
+            .dropdown
+                z-index: 2
+                top: -7px
+                right: 3px
+                i 
+                    font-size: 22px
+            .profile
+                margin: 0 10px 0 0
+            p 
+                font-family: $font2 !important
+                color: $color_07 !important
+            .name 
+             
+                font-weight: bold
+                float: left
+                font-size: 15px
+            .date
+                float: right
+
+.box-comments 
+    position: relative
+    padding: 5px 10px
+
+    color: $color_07
+    background: $color_01
+
+    &:after 
+        content: ""
+        position: absolute
+        bottom: -20px
+        left: 50px 
+        border-width: 20px 0 0 20px 
+        border-style: solid
+        border-color: #fff 
+        display: block
+        width: 0
+
+.left-triangle:after 
+    top: 0px
+    left: -27px
+    bottom: auto
+    border-width: 0 27px 21px 0
+    border-color: transparent #fff
+.search-members
+    width: 250px
+    position: absolute
+    z-index: 2
+    background-color: $color_01
+    box-shadow: 0px 0px 1px $color_07
+    .search
+        position: relative
+        width: 100%
+        padding: 6px
+
+        input 
+            padding-left: 10px
+        i 
+            position: absolute
+            right: 13px
+            top: 17px
+    .search-boddy
+        width: 100%
+        border-top: 1px solid $color_06
+        padding: 6px
+        ul 
+            margin: 0
+            padding: 0
+            max-height: 230px
+            overflow: auto
+            li 
+                list-style-type: none
+                display: block
+                padding: 5px 10px
+                position: relative
+                margin-bottom: 5px
+                .search-name
+                    float: left
+                    width: 138px
+                    word-wrap: break-word
+                    text-align: left
+                    margin-left: 5px
+                    padding-top: 10px
+                    h4
+                        font-size: 15px
+                        margin: 5px 0 0 0
+                        font-weight: bold
+                    p
+                        font-size: 13px
+                        color: $color_07 !important
+                        margin: 0
+                .check
+                        width: 20px
+                        height: 20px
+                        position: absolute
+                        right: 5px
+                        top: 50%
+                        margin-top: -10px
+            .option 
+                padding: 3px 5px
+                border: 2px solid transparent
+                p 
+                    margin: 0
+                    color: $color_01 
+                &:hover
+                    border: 2px solid $color_08
+            .option:last-child
+                margin-bottom: 0 
+.selection
+        width: 250px
+        position: absolute
+        right: 48px
+        bottom: 38px
+        z-index: 2
+        padding: 10px 10px 0 10px
+        background-color: $color_01
+        box-shadow: 0px 0px 1px $color_07
+        cursor: default
+        ul 
+            margin: 0
+            padding: 0
+            li  
+                float: left
+                width: 33.33%
+                height: 55px
+                text-align: center
+                list-style-type: none
+                margin-bottom: 10px
+               
+                font-weight: bold
+                p 
+                    line-height: 1
+                    font-size: 13px !important
+                    color: $color_17 !important
+                i 
+                    cursor: pointer
+                    font-size: 20px
+
+.box 
+    width: 100%
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2)
+    border-radius: 0px
+    background-color: $color_01
+    .box-title
+        width: 100%
+        height: 30px
+        border-bottom: 1px solid $color_06
+        padding: 5px 15px
+        font-weight: 600
+        font-size: 15px
+    .box-body
+        width: 100%
+        padding: 15px
+.box-alert
+    width: 100%
+    padding: 10px 20px
+    border: 1px solid $color_06
+    div 
+        width: 80%
+        margin: auto
+        position: relative
+        i ,  p
+            
+            color: $color_01 !important
+        i 
+            margin-right: 10px
+            font-size: 40px
+            position: absolute
+            top: 50%
+            margin-top: -20px
+        p 
+            margin-left: 48px !important
+            font-size: 18px !important
+
+.box-sw
+    width: 60%
+    background-color: rgba(255,255,255,0.6)
+    padding: 15px
+    .circle-icon
+        float: left
+        +border-radius(50%)
+        padding: 2px 4px 4px 4px
+        margin-right: 8px
+        i 
+            color: $color_01
+            font-size: 22px
+            font-weight: bold
+    p 
+        float: left
+        color: $color_07 !important
+        margin-right: 20px !important
+    .switch
+        width: 50px
+        float: right
+        margin-top: 10px
+
+@media (min-width: 320px)
+    .box-tasks
+        width: 100%
+    .box-progress
+        .progress-title
+            width: 22%
+        .progress-bar
+            width: 65%
+        .percent
+            width: 10%
+    .box-width
+        width: 100% 
+    .list-project
+        width: 90%
+        .box 
+          width: 100%
+          margin: 10px 0
+    .box-comments 
+        margin: 0px 0 10px 87px
+    .activity
+        ul 
+            li 
+                p 
+                    width: 75%
+    .selection, .search-members
+       right: 2px
+@media (min-width: 480px)
+    .box-progress
+        .progress-title
+            width: 18%
+        .progress-bar
+            width: 70%
+        .percent
+            width: 10%
+    .list-project
+        .box 
+          width: 47%
+          margin: 10px 1%
+    .box-comments 
+        margin: -25px 0 10px 87px
+    .activity
+        ul 
+            li 
+                p 
+                    width: 80%
+   
+    .selection, .search-members
+       right: 30px
+@media (min-width: 600px)
+    .box-progress
+        .progress-title
+            width: 10%
+        .progress-bar
+            width: 83%
+        .percent
+            width: 5%
+    .selection, .search-members
+       right: 48px
+@media (min-width: 768px)
+    .box-tasks
+        width: 300px
+    .box-progress
+        .progress-title
+            width: 20%
+        .progress-bar
+            width: 68%
+        .percent
+            width: 10%
+    .box-width
+        width: 300px 
+    .list-project
+        width: 700px
+        .box 
+          width: 30.8%
+          margin: 10px 1%
+    
+@media (min-width: 992px)
+    .list-project
+        width: 700px
+        .box 
+          width: 30.9%
+          margin: 10px 1% 
+@media (min-width: 1024px)  
+    .list-project
+        width: 740px
+        .box 
+          width: 22.5%
+          margin: 10px 1%      
+@media (min-width: 1200px)
+     .list-project
+        width: 95%
+        .box 
+          width: 17.6%
+          margin: 10px 1%
